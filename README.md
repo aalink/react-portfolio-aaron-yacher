@@ -1,2 +1,2 @@
-# react-portfolio-aaron-yacher
+# React Portfolio
 A portfolio page created with React

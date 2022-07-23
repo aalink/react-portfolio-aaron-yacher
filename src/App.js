@@ -1,16 +1,17 @@
 // import logo from './logo.svg';
 import portrait from "./aaron-yacher-portrait.jpg"
 import './App.css';
+// import About from "./components/About"
+// import Google from "./components/Google"
+import Navbar from "./components/Navbar"
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={portrait} className="App-logo" alt="logo" />
-        <p>
-          {/* Edit <code>src/App.js</code> and save to reload. */}
-          AARON YACHER
-        </p>
+        <p>Aaron Yacher</p>
         <a
           className="App-link"
           href="https://github.com/aalink"
@@ -19,6 +20,10 @@ function App() {
         >
           GitHub
         </a>
+      <Navbar />
+
+      <img src={portrait} className="App-logo" alt="logo" />
+
       </header>
     </div>
   );

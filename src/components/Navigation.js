@@ -1,6 +1,8 @@
-const Navbar = () => {
+import resume from "../assets/Aaron-Yacher-Resume.pdf"
+
+const Navigation = () => {
   return (
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="p-0 navbar navbar-expand-sm navbar-dark bg-dark">
       <button
         class="navbar-toggler"
         type="button"
@@ -14,36 +16,29 @@ const Navbar = () => {
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
+          <li class="nav-item border m-1">
             <a class="nav-link text-white" href="#about-me">
               About Me <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item border m-1">
             <a class="nav-link text-white" href="#portfolio">
               Portfolio
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item border m-1">
             <a class="nav-link text-white" href="#contact">
               Contact
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item border m-1">
             <a
               class="nav-link text-white"
-              href="assets/documents/Aaron-Yacher-Resume.pdf"
+              href={resume}
               download
             >
               Resume
             </a>
-          </li>
-
-          <li>
-
-          </li>
-          <li>
-
           </li>
         </ul>
       </div>
@@ -51,4 +46,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navigation;

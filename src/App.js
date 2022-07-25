@@ -1,30 +1,26 @@
 // import logo from './logo.svg';
-import portrait from "./aaron-yacher-portrait.jpg"
-import './App.css';
-// import About from "./components/About"
-// import Google from "./components/Google"
-import Navbar from "./components/Navbar"
+// import portrait from "./aaron-yacher-portrait.jpg";
+import "./App.css";
+import About from "./components/About"
+import Navigation from "./components/Navigation";
 
-
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Aaron Yacher</p>
-        <a
-          className="App-link"
-          href="https://github.com/aalink"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-      <Navbar />
-
-      <img src={portrait} className="App-logo" alt="logo" />
+        <Navigation />
 
       </header>
+
+      <main>
+        <About />
+
+      </main>
+
+        <Footer />
+
     </div>
   );
 }
